@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   font-family: sans-serif;
+   font-size: 25px;
+}
+/*barra de navegacion */
+
+.container__nav{
+    background-color: gray;
+    padding: 20px;  
+}
+
+.container__ul{
+   list-style-type: none;
+   display: flex;  
+   justify-content:space-evenly;
+   align-items: center;
+ 
+}
+
+.container__ul__li{
+    display: inline-block;
+    padding: 20px;
+    transition-duration: .7s;
+
+}
+.container__ul__li:hover{
+    display: inline-block;
+    padding: 20px;
+    background-color: rgb(61, 61, 61);
+    border-radius: 50px;
+
+}
+.one_li{
+    color: white;
+}
+.container__ul__li__a{
+    text-decoration: none;
+    color: white; 
+}
+/*barra de navegacion*/
+body{
+    background-color: rgb(61, 61, 61);
+}
+/*seccion-name*/
+.name{ 
+    padding: 50px;
+}
+.name__complete{
+    font-size: 45px ;
+    font-style: italic;
+    font-weight: normal;
+    color: rgb(225,225,225);
+
+}
+/*seccion-name*/
+
+/*section_data*/
+.datos__generales{
+    display: flex;
+    justify-content: space-around;
+}
+.personal_data{
+    background-color:rgb(39, 39, 39);
+    padding: 30px;
+    border-radius: 20px;
+    width: 420px;
+}
+.estudios{
+    background-color: rgb(39,39,39);
+    padding: 30px;
+    border-radius: 20px;
+    width: 420px;
+}
+.cursos__realizados{
+    background-color: rgb(39,39,39);
+    padding: 30px;
+    border-radius: 20px;
+    width: 420px;
+}
+.domicilios{
+    background-color: rgb(39,39,39);
+    padding: 30px;
+    border-radius: 20px;
+    width: 420px;
+}
+li{
+    list-style-type: none;
+    color: rgb(225,225,225);
+    padding: 10px;
+    text-align: center;
+}
+h2{
+    color: rgb(225,225,225);
+    padding: 20px;
+    text-align: center;
+    font-size: 34px;
+    font-style:oblique;
+    transition-duration: .4s;
+}
+h2:hover{
+ background-color: rgb(117, 117, 117);
+ padding: 20px;
+ border-radius: 20px;
+ color: rgb(0, 0, 0);
+}
+/*section_data*/
+.container__img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+   
+}
+.foto__fake{
+    border-radius: 100px;
+    width:310px;
+    border:10px solid rgb(87, 87, 87) ;
+    transition-duration: .4s;
+    transition-property: width;
+    transition-delay: .2s;
+}
+.foto__fake:hover{
+    border-radius: 100px;
+    width:350px;
+    border:10px solid rgb(68, 68, 68) ;
+    box-shadow: 5px 4px 20px 0 black ;
+ }
+ .redes{
+    display: flex;
+    justify-content: center;
+}
+.fwin{
+    font-weight: normal;
+    font-size: 30px;
+    color: rgb(255, 255, 255); 
+}
+.social__container{
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.facebook{
+padding: 20px;
+
+}
+.fc{
+    width: 70px;
+    border-radius: 90px;
+}
+.wasttsap{
+    padding: 20px;
+  
+}
+.ws{
+    width: 36px;
+    border-radius: 20px;
+}
+.instragram{
+    padding: 20px;
+   
+}
+.in{
+    width: 40px;
+    border-radius: 20px;
+}
+.footer__presentacion{
+    background-color: rgb(49, 49, 49);
+    margin-top: 80px;
+    height: 100%;
+    
+}
+/*boton modificacion*/
+.button__container{
+    display: flex;
+    justify-content: center;
+}
+.foto__fake{
+    margin-top:16px ;
+  
+}
+.foto__change{
+    width:200px;
+    border: 2px solid rgb(225,225,225);
+    transition-duration:.2s ;
+}
+.foto__change:hover{
+    width:250px;
+    height: 40px;
+    border: 2px solid rgb(225,225,225);
+   
+}
+@media screen and (max-width: 1735px){
+.datos__generales{
+    flex-direction: column;
+    align-items: center;
+   
+  
+}
+.name__complete{
+    text-align: center;
+}
+.personal_data{
+ margin: 20px;
+ width: 560px;
+}
+.estudios{
+ margin: 20px;
+width: 560px;
+}
+.cursos__realizados{
+ margin: 20px;
+width: 560px;
+}
+.domicilios{
+ margin:20px;
+ width: 560px;
+}
+li{
+    text-align: center;
+   }
+}
+@media screen and (max-width: 570px){
+    .personal_data{
+     
+        width: 460px;
+       }
+       .estudios{
+       
+       width: 460px;
+       }
+       .cursos__realizados{
+      
+       width: 460px;
+       }
+       .domicilios{
+       
+        width: 460px;
+       }
+       li{
+        text-align: center;
+       }
+}
